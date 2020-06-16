@@ -1,0 +1,39 @@
+.input
+{
+    width: 80%;
+    border-radius: 2rem;
+    border:none;
+    padding: 1rem 2rem;
+    outline: none;
+    font-size: 1.4rem;
+    border: 1px solid transparent;
+}
+
+.input::placeholder 
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.input:focus
+{
+    border: 1px solid #dcdde1;
+}
+
+.input:not(:last-child)
+{
+    margin-bottom: 1.5rem;
+}
+
+
+.input--text
+{
+    height: 10rem;
+    resize: none;
+}
+
+.btn-pri
+{
+    padding: .7rem 2rem;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+}

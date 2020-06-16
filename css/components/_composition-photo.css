@@ -1,0 +1,21 @@
+.image-bg
+{
+    width: 40%;
+    margin-right: -8rem;
+    z-index: 1;
+}
+
+.image-bg--1
+{
+    width: 100%;
+    z-index: 1;
+}
+
+@media only screen and (max-width:1200px)
+{
+    .image-bg{
+        margin-right: 0;
+        margin-top: 2rem;
+    }
+    
+}

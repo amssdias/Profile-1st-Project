@@ -1,0 +1,45 @@
+.margin-top-big{margin-top: -7rem;}
+.margin-top-small{margin-top: 3rem;}
+
+.margin-bottom-smallest{margin-bottom: 1rem;}
+.margin-bottom-small{margin-bottom: 3rem;}
+.margin-bottom-big{margin-bottom: 7rem;}
+
+@media only screen and (max-width:1200px)
+{
+    .margin-bottom-big
+    {
+        margin-bottom: 0;
+    }
+
+}
+
+.border-bottom{border-bottom: 2px solid #000000;}
+
+.opac-none{opacity: 0;}
+
+.icon-orange{color:#F16529;}
+.icon-blue{color:#264de4;}
+.icon-purple{color:#602C50;}
+.icon-yellow{color: #F0DB4F;}
+.icon-yellowish{color: #FFD43B;}
+
+
+.animation-nav
+{
+    animation-name: moveright;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+
+.animation-main-page
+{
+    animation-name: fromtop;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}

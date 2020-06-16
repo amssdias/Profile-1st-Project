@@ -1,0 +1,76 @@
+.section-contact
+{
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(../../images/contact-bg.jpg);
+    background-size: cover;
+    background-position: center;
+
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 100%;
+}
+
+.section-contact--1
+{
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5));
+    text-align: center;
+    padding: 3rem;
+}
+
+.section-contact--2
+{
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5));
+    display: flex;
+}
+
+.section-contact__form
+{
+    flex: 1;
+    padding-left: 2.5rem;
+    
+}
+
+.section-contact__info
+{
+    flex-basis: 40%;
+    padding: 1.5rem;
+    height: 100%;
+}
+
+
+/**********************************************
+MEDIA QUERIES       750px
+**********************************************/
+
+@media only screen and (max-width:750px)
+{
+    .section-contact
+    {
+        padding: 0;
+    }
+
+    .section-contact--2
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-contact__form
+    {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .section-contact__info
+    {
+        text-align: center;
+    }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <title>Dias</title>
+</head>
+<body>
+
+    <!-------------- Main box -------------------->
+    <div class="container">
+
+        <!-------------- Header -------------------->
+        <header class="header">
+
+                <nav class="side-bar">
+                    <h3 class="heading-tertiary border-bottom margin-bottom-big">
+                        André Dias
+                    </h3>
+
+                
+                    <ul class="side-bar__list">
+                        <li class="side-bar__item "><a href="index.html" class="side-bar__link">Home</a></li>
+                        <li class="side-bar__item"><a href="about_me.html" class="side-bar__link">About me</a></li>
+                        <li class="side-bar__item"><a href="gallery.html" class="side-bar__link">Gallery</a></li>
+                        <li class="side-bar__item"><a href="skills.html" class="side-bar__link">Skills</a></li>
+                        <li class="side-bar__item"><a href="contact.html" class="side-bar__link">Contact</a></li>
+                    </ul>
+                </nav>
+
+            
+        </header>
+
+
+
+        <!-------------- Main Content -------------------->
+        <main class="main">
+            <section class="section-gallery">
+
+                <h2 class="heading-secondary margin-top-small">Some of my travels</h2>
+            
+
+                <div class="gallery">
+
+                    <img src="images/gallery-0.JPG" alt="Photo 1" class="gallery__image" id="image">
+
+                    <div class="btn-box">
+                        <button class="gallery__btn" id="left-btn"> &larr;</button>
+                        <button class="gallery__btn" id="right-btn"> &rarr;</button>
+                    </div>
+                    
+
+                </div>
+
+
+            </section>
+
+
+            <script>
+
+                var image;
+                image = 1;
+                document.querySelector('.gallery__image').src = 'images/gallery-0.JPG';
+
+                document.getElementById('right-btn').addEventListener('click', changePicture);
+                document.getElementById('left-btn').addEventListener('click', changePicture);
+
+
+
+                function changePicture () 
+                {
+                    if (image === 1)
+                    {
+                        document.getElementById('image').src = 'images/gallery-' + image + '.JPG';
+                        image = 0;
+                    }
+                    else
+                    {
+                        document.getElementById('image').src = 'images/gallery-' + image + '.JPG';
+                        image = 1;
+                    }
+                }
+
+
+
+
+            </script>
+
+        </main>
+
+    </div>
+ 
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+.heading-primary
+{
+    width: 100%;
+    text-transform: uppercase;
+    color: #D32F2F;
+    z-index: 10;
+    text-align: center;
+
+}
+
+.heading-primary--main
+{
+    display: block;
+    font-size: 8.5rem;
+    letter-spacing: 1.5rem;
+
+    animation-name: fromtop;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+
+.heading-primary--sub
+{
+    display: block;
+    font-size: 3rem;
+    letter-spacing: .7rem;
+
+    animation-name: moveright;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.heading-secondary
+{
+    /*background-image: linear-gradient(#E8CBC0,#636FA4);*/
+    background-image:linear-gradient(to right bottom, #4ecdc4, #556270);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    
+    transition: .3s;
+}
+
+.heading-secondary:hover
+{
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.paragraph
+{
+    font-size: 1.4rem;
+}
+
+
+.heading-tertiary
+{
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    opacity: 1;
+}
+
+.heading-forth
+{
+    font-size: 1.7rem;
+}
+
+.paragraph--1
+{
+    font-size: 1.4rem;
+}
+
+.paragraph--1:not(:last-child)
+{
+    margin-bottom: 2.5rem;
+}
+
+.icon-social-network:link,
+.icon-social-network:visited
+{
+    font-size: 2.5rem;
+    color: #007bff;
+}
+
+.icon-social-network:not(:last-child)
+{
+    margin-right: 3rem;
+}
+
+.icon-language
+{
+    font-size: 4rem;
+}
+
+.skills-text
+{
+    margin:0 1rem;
+    font-weight: 700;
+    
+}
+
+/**********************************************
+MEDIA QUERIES       750px
+**********************************************/
+
+@media only screen and (max-width:750px)
+{
+    .heading-primary
+    {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+}
+
+
+/**********************************************
+MEDIA QUERIES       550px
+**********************************************/
+
+@media only screen and (max-width:650px)
+{
+    .heading-primary--main
+    {
+        font-size: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+}

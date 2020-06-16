@@ -1,0 +1,57 @@
+.section-gallery
+{
+    text-align: center;
+    height: 100%;
+}
+
+.gallery
+{
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+
+}
+
+.gallery__image
+{
+    width: 50%;
+}
+
+.btn-box
+{
+    display: flex;
+    
+}
+
+.gallery__btn
+{
+    font-size: 2rem;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-image:linear-gradient(to right bottom, #4ecdc5de, #556270b9);
+
+    margin: 2rem;
+    transition: .3s;
+}
+
+.gallery__btn:focus
+{
+    outline: none;
+}
+
+.gallery__btn:hover
+{
+    transform: translateY(-3px) scale(1.3);
+}
+
+

@@ -1,0 +1,34 @@
+.section-about
+{
+    background-image: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.5)), 
+    url(../../images/foto-3-1.jpg);
+    background-size: cover;
+    background-position: right;
+    
+    height: 100%;
+    width: 100%;
+    padding: 5rem;
+
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text
+{
+    text-align: center;
+}
+
+@media only screen and (max-width:1200px)
+{
+    .section-about
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        min-height: 100rem;
+        background-position: center;
+    }
+}

@@ -1,0 +1,129 @@
+.container {
+    background-color: #eee;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: stretch;
+    
+}
+
+.header
+{
+    background-color: #FFFFFF;
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main
+{
+    /*background-image:linear-gradient(to right bottom,#16BFFD, #CB3066);*/
+    background-color: #f1f2f6;
+    padding: 3rem;
+    width: 70%;
+}
+
+
+.main-section
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+
+
+/**********************************************
+MEDIA QUERIES       1200px
+**********************************************/
+@media only screen and (max-width:1200px)
+{
+
+    .container
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 100%;
+        padding: 2rem;
+    }
+
+    .header
+    {   
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+
+    .main
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .main-section
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    
+}
+
+
+/**********************************************
+MEDIA QUERIES       998px
+**********************************************/
+
+
+@media only screen and (max-width:992px)
+{
+    .container
+    {
+        margin: 0;
+        max-width: 992px;
+    }
+
+    .main
+    {
+        padding: 0;
+    }
+
+    .main-section
+    {
+        padding: 0rem;
+        
+    }
+
+}
+
+
+/**********************************************
+MEDIA QUERIES       750px
+**********************************************/
+
+@media only screen and (max-width:750px)
+{
+    .container
+    {   
+        padding: 0rem;
+    }
+
+}
+
