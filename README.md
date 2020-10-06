@@ -1,5 +1,10 @@
-# Profile-1st-Project
+# Profile 1st Project
 
-A project from CS50 course, basic website profile (frontend - No Javascript)
+My first project from CS50 course: Introduction to programming.
+Only made with, HTML, CSS, SCSS, Javascript.
 
-Made on May - 2020
+> Made on May - 2020
+
+### To view:
+* Download all the files
+* Double click on "index.html"
